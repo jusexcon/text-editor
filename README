@@ -1,0 +1,28 @@
+To add a file to your git repo, you must first add the file.
+
+e.g. You should see this in GNOME Shell : username@host-name ~/text-editor git add filename.py
+
+After adding it, you must commit it.
+
+e.g in GNOME shell : username@host-name ~/text-editor git commit -m 'desc here'
+
+You should get this :
+
+[master 493a523] desc here
+ 1 files changed, 61 insertions(+), 0 deletions(-)
+ create mode 100644 filename.py
+
+Then you must git push origin master
+
+e.g, GNOME SHELL : username@host-name ~/text-editor git push origin master
+
+You (possibly) should get this :
+
+Counting objects: 4, done.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 751 bytes, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To git@github.com:username/filename.py
+   a42f586..493a523  master -> master
+
+Then recheck your git repo.
